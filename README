@@ -1,8 +1,9 @@
 jasmine-haxe
 ============
 
-haXe bindings for Jasmine. Jasmine is a behavior-driven development framework for testing your JavaScript code.
+haXe bindings for Jasmine, a behavior-driven development framework for testing your JavaScript / haXe code.
 
+https://github.com/rjanicek/jasmine-haxe
 http://pivotal.github.com/jasmine/
 https://github.com/pivotal/jasmine
 
