@@ -7,57 +7,57 @@ import js.Lib;
 class JasmineSpec {
 
 	public function new() {
-		J.describe_("Jasmine", function() {
+		J.describe("Jasmine", function() {
 			
-			J.it_("should have Env", function() {
-				J.expect_(Jasmine.getEnv()).toBeDefined();
+			J.it("should have Env", function() {
+				J.expect(Jasmine.getEnv()).toBeDefined();
 			} );
 			
-			J.it_("should have TrivialReporter", function() {
-				J.expect_(Jasmine.newTrivialReporter()).toBeDefined();
+			J.it("should have TrivialReporter", function() {
+				J.expect(Jasmine.newTrivialReporter()).toBeDefined();
 			} );
 			
-			J.it_("should run", function() {
-				J.runs_(function() {
-					J.expect_(true).toBe(true);
+			J.it("should run", function() {
+				J.runs(function() {
+					J.expect(true).toBe(true);
 				} );
 			} );
 			
-			J.it_("should wait", function() {
+			J.it("should wait", function() {
 				var jasmineIsCool:Int = 0;
 				
-				J.runs_(function() {
+				J.runs(function() {
 					Timer.delay(function() { jasmineIsCool++; }, 250);	
 				});
 				
-				J.runs_(function() {
-					J.expect_(jasmineIsCool).toEqual(0);
+				J.runs(function() {
+					J.expect(jasmineIsCool).toEqual(0);
 				});
 				
-				J.waits_(500);
+				J.waits(500);
 				
-				J.runs_(function() {
-					J.expect_(jasmineIsCool).toEqual(1);
+				J.runs(function() {
+					J.expect(jasmineIsCool).toEqual(1);
 				} );
 			} );
 			
-			J.it_("should wait for", function() {
+			J.it("should wait for", function() {
 				var jasmineIsCool:Int = 0;
 				
-				J.runs_(function() {
+				J.runs(function() {
 					Timer.delay(function() { jasmineIsCool++; }, 250);	
 				});
 				
-				J.runs_(function() {
-					J.expect_(jasmineIsCool).toEqual(0);
+				J.runs(function() {
+					J.expect(jasmineIsCool).toEqual(0);
 				});
 				
-				J.waitsFor_(function() { 
+				J.waitsFor(function() { 
 					return jasmineIsCool == 1;
 				}, "jasmineIsCool to equal 1" );
 				
-				J.runs_(function() {
-					J.expect_(jasmineIsCool).toEqual(1);
+				J.runs(function() {
+					J.expect(jasmineIsCool).toEqual(1);
 				} );
 			} );
 			

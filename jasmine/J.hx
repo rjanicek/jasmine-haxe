@@ -2,48 +2,48 @@ package jasmine;
 
 class J {
 
-	public inline static function beforeEach_( beforeEachFunction : Void -> Void ) : Void untyped {
-		beforeEach(beforeEachFunction);
+	public static function beforeEach( beforeEachFunction : Void -> Void ) : Void {
+		untyped __js__("beforeEach(beforeEachFunction);");
 	}
 	
-	public inline static function afterEach_( afterEachFunction : Void -> Void ) : Void untyped {
-		afterEach(afterEachFunction);
+	public static function afterEach( afterEachFunction : Void -> Void ) : Void {
+		untyped __js__("afterEach(afterEachFunction);");
 	}
 	
-	public inline static function describe_( description : String, specDefinitions : Void -> Void ) : Void untyped {
-		describe(description, specDefinitions);
-	}
-	
-	public inline static function xdescribe_( description : String, specDefinitions : Void -> Void ) : Void untyped {
-		xdescribe(description, specDefinitions);
-	}
-	
-	public inline static function it_( description : String, func : Void -> Void ) : Void untyped {
-		it(description, func);
+	public static function describe( description : String, specDefinitions : Void -> Void ) : Void {
+		untyped __js__("describe(description, specDefinitions);");
 	}
 
-	public inline static function xit_( description : String, func : Void -> Void ) : Void untyped {
-		xit(description, func);
+	public static function xdescribe( description : String, specDefinitions : Void -> Void ) : Void {
+		untyped __js__("xdescribe(description, specDefinitions);");
 	}
 	
-	public inline static function expect_( actual : Dynamic ) : Matchers untyped {
-		return expect(actual);
+	public static function it( description : String, func : Void -> Void ) : Void {
+		untyped __js__("it(description, func);");
+	}
+
+	public static function xit( description : String, func : Void -> Void ) : Void {
+		untyped __js__("xit(description, func);");
 	}
 	
-	public inline static function fail_( e : Dynamic ) : Void untyped {
-		fail(e);
+	public static function expect( actual : Dynamic ) : Matchers {
+		return untyped __js__("expect(actual);");
 	}
 	
-	public inline static function runs_( func : Void -> Void ) : Void untyped {
-		runs(func);
+	public static function fail( e : Dynamic ) : Void {
+		untyped __js__("fail(e);");
 	}
 	
-	public inline static function waits_( timeoutMilliseconds : Int ) : Void untyped {
-		waits(timeoutMilliseconds);
+	public static function runs( func : Void -> Void ) : Void {
+		untyped __js__("runs(func);");
 	}
 	
-	public inline static function waitsFor_( func : Void -> Bool, ?message : String, ?timeoutMilliseconds : Int ) : Void untyped {
-		waitsFor(func, message, timeoutMilliseconds);
+	public static function waits( timeoutMilliseconds : Int ) : Void {
+		untyped __js__("waits(timeoutMilliseconds);");
+	}
+	
+	public static function waitsFor( func : Void -> Bool, ?message : String, ?timeoutMilliseconds : Int ) : Void {
+		untyped __js__("waitsFor(func, message, timeoutMilliseconds);");
 	}
 	
 }

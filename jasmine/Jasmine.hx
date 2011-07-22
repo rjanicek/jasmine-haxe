@@ -11,6 +11,6 @@ class Jasmine {
 	}
 	
 	public static function newTrivialReporter() : Reporter {
-		return Lib.eval("new jasmine.TrivialReporter()");
+		return untyped __js__("new jasmine.TrivialReporter()");
 	}
 }
