@@ -59,6 +59,7 @@ class JasmineSpec {
 				J.runs(function() {
 					J.expect(jasmineIsCool).toEqual(1);
 				} );
+				
 			} );
 			
 		} );

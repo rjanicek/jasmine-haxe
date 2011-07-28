@@ -3,47 +3,43 @@ package jasmine;
 class J {
 
 	public static function beforeEach( beforeEachFunction : Void -> Void ) : Void {
-		untyped __js__("beforeEach(beforeEachFunction);");
+		untyped __js__("beforeEach(beforeEachFunction)");
 	}
 	
 	public static function afterEach( afterEachFunction : Void -> Void ) : Void {
-		untyped __js__("afterEach(afterEachFunction);");
+		untyped __js__("afterEach(afterEachFunction)");
 	}
 	
 	public static function describe( description : String, specDefinitions : Void -> Void ) : Void {
-		untyped __js__("describe(description, specDefinitions);");
+		untyped __js__("describe(description, specDefinitions)");
 	}
 
 	public static function xdescribe( description : String, specDefinitions : Void -> Void ) : Void {
-		untyped __js__("xdescribe(description, specDefinitions);");
+		untyped __js__("xdescribe(description, specDefinitions)");
 	}
 	
 	public static function it( description : String, func : Void -> Void ) : Void {
-		untyped __js__("it(description, func);");
+		untyped __js__("it(description, func)");
 	}
 
 	public static function xit( description : String, func : Void -> Void ) : Void {
-		untyped __js__("xit(description, func);");
+		untyped __js__("xit(description, func)");
 	}
 	
 	public static function expect( actual : Dynamic ) : Matchers {
-		return untyped __js__("expect(actual);");
-	}
-	
-	public static function fail( e : Dynamic ) : Void {
-		untyped __js__("fail(e);");
+		return untyped __js__("expect(actual)");
 	}
 	
 	public static function runs( func : Void -> Void ) : Void {
-		untyped __js__("runs(func);");
+		untyped __js__("runs(func)");
 	}
 	
 	public static function waits( timeoutMilliseconds : Int ) : Void {
-		untyped __js__("waits(timeoutMilliseconds);");
+		untyped __js__("waits(timeoutMilliseconds)");
 	}
 	
 	public static function waitsFor( func : Void -> Bool, ?message : String, ?timeoutMilliseconds : Int ) : Void {
-		untyped __js__("waitsFor(func, message, timeoutMilliseconds);");
+		untyped __js__("waitsFor(func, message, timeoutMilliseconds)");
 	}
 	
 }
