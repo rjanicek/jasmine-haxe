@@ -42,4 +42,8 @@ class J {
 		untyped __js__("waitsFor(func, message, timeoutMilliseconds)");
 	}
 	
+	public static function spyOn( x : Dynamic, method : String ) : Spy {
+		return untyped __js__("spyOn(x, method)");
+	}
+	
 }
