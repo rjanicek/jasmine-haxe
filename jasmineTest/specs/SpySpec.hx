@@ -38,7 +38,7 @@ class Klass {
 	public static function staticMethod() {
 	}
 	
-	public function new();
+	public function new() {}
 	
 	public function method() {
 	}
