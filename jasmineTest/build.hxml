@@ -1,3 +1,4 @@
 -cp ../
 -js bin/jasmine-haxe-test.js
 -main jasmineTest.Main
+--dead-code-elimination

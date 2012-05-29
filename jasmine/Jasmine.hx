@@ -14,6 +14,10 @@ class Jasmine {
 		return untyped __js__("new jasmine.TrivialReporter()");
 	}
 	
+	public static function newHtmlReporter() : Reporter {
+		return untyped __js__("new jasmine.HtmlReporter()");
+	}
+	
 	public static function createSpy( name : String ) : Spy untyped {
 		return jasmine.createSpy(name);
 	}

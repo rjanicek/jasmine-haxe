@@ -14,7 +14,7 @@ class Main {
 		new MatchersSpec();
 		new SpySpec();
 
-		Jasmine.getEnv().addReporter(Jasmine.newTrivialReporter());
+		Jasmine.getEnv().addReporter(Jasmine.newHtmlReporter());
 		Jasmine.getEnv().execute();		
 	}
 	
