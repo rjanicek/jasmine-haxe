@@ -11,7 +11,7 @@ Tested with Haxe 2.09, Jasmine 1.2.0 and Chrome.
 
 <pre>
 J.describe("Jasmine", function() {
-  J.it("makes testing haXe awesome!", function() {
+  J.it("makes testing Haxe awesome!", function() {
     J.expect(yourCode).toBeLotsBetter();
   });
 });
