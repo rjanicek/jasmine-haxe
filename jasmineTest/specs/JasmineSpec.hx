@@ -17,6 +17,10 @@ class JasmineSpec {
 				J.expect(Jasmine.newTrivialReporter()).toBeDefined();
 			} );
 			
+			J.it("should have HtmlReporter", function() {
+				J.expect(Jasmine.newHtmlReporter()).toBeDefined();
+			} );
+			
 			J.it("should run", function() {
 				J.runs(function() {
 					J.expect(true).toBe(true);

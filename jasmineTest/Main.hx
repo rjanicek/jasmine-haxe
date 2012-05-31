@@ -6,16 +6,11 @@ import jasmineTest.specs.SpySpec;
 
 class Main {
 	static function main() {
-		new Main();
-	}
-	
-	public function new() {
 		new JasmineSpec();
 		new MatchersSpec();
 		new SpySpec();
 
 		Jasmine.getEnv().addReporter(Jasmine.newHtmlReporter());
 		Jasmine.getEnv().execute();		
-	}
-	
+	}	
 }
