@@ -76,16 +76,14 @@ jasmine.Jasmine.prototype = {
 	__class__: jasmine.Jasmine
 }
 var jasmineTest = jasmineTest || {}
-jasmineTest.Main = $hxClasses["jasmineTest.Main"] = function() {
+jasmineTest.Main = $hxClasses["jasmineTest.Main"] = function() { }
+jasmineTest.Main.__name__ = ["jasmineTest","Main"];
+jasmineTest.Main.main = function() {
 	new jasmineTest.specs.JasmineSpec();
 	new jasmineTest.specs.MatchersSpec();
 	new jasmineTest.specs.SpySpec();
 	jasmine.Jasmine.getEnv().addReporter(jasmine.Jasmine.newHtmlReporter());
 	jasmine.Jasmine.getEnv().execute();
-};
-jasmineTest.Main.__name__ = ["jasmineTest","Main"];
-jasmineTest.Main.main = function() {
-	new jasmineTest.Main();
 }
 jasmineTest.Main.prototype = {
 	__class__: jasmineTest.Main
@@ -98,6 +96,9 @@ jasmineTest.specs.JasmineSpec = $hxClasses["jasmineTest.specs.JasmineSpec"] = fu
 		});
 		jasmine.J.it("should have TrivialReporter",function() {
 			jasmine.J.expect(jasmine.Jasmine.newTrivialReporter()).toBeDefined();
+		});
+		jasmine.J.it("should have HtmlReporter",function() {
+			jasmine.J.expect(jasmine.Jasmine.newHtmlReporter()).toBeDefined();
 		});
 		jasmine.J.it("should run",function() {
 			jasmine.J.runs(function() {
