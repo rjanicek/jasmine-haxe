@@ -1,8 +1,7 @@
-package jasmineTest;
 import jasmine.Jasmine;
-import jasmineTest.specs.JasmineSpec;
-import jasmineTest.specs.MatchersSpec;
-import jasmineTest.specs.SpySpec;
+import specs.JasmineSpec;
+import specs.MatchersSpec;
+import specs.SpySpec;
 
 class Main {
 	static function main() {

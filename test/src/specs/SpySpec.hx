@@ -1,4 +1,4 @@
-package jasmineTest.specs;
+package specs;
 import jasmine.J;
 import jasmine.Jasmine;
 import jasmine.Spy;

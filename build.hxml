@@ -1,0 +1,5 @@
+-cp src
+-cp test/src
+-js test/bin/jasmine-haxe-test.js
+-main Main
+--dead-code-elimination

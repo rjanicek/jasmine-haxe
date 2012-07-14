@@ -1,4 +1,4 @@
-package jasmineTest.specs;
+package specs;
 import haxe.Timer;
 import jasmine.J;
 import jasmine.Jasmine;
